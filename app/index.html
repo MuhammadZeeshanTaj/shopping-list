@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="module1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AngJs Shopping-List app</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/angular.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body ng-controller = "shoppingCtrl">
+    <div id="wrapper">
+        <h1>Shopping-List</h1>
+        <ul ng-repeat= "item in shoppinglists">
+            <li ng-click = "addToList(item)" ng-class="{active: item.active}">{{ item.name }} <span> {{ item.price | currency}}</span></li>
+        </ul>
+        <div class="total">
+            <h2>Total: <span>{{ total() | currency}}</span></h2>
+        </div>
+    </div>
+</body>
+</html>

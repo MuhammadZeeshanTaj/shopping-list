@@ -1,0 +1,15 @@
+{
+  "name": "angularjs-shopping-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d app"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://MuhammadZeeshanTaj.github.io/shopping-list",
+  "dependencies": {
+    "gh-pages": "^2.0.0"
+  }
+}
